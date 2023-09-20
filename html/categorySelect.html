@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Selection</title>
+</head>
+<body>
+  <h1>Select a Category</h1>
+  <form id="categoryForm">
+    <select id="categorySelect" onchange="toggleTextBox()">
+      <option value="option1">Option 1</option>
+      <option value="option2">Option 2</option>
+      <option value="other">Other...</option>
+    </select>
+    <input type="text" id="otherCategory" name="otherCategory" style="display: none;" placeholder="Specify Other Category">
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="/js/categorySelect.js">
+   
+  </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- checkbox and radiobutton size -->
+    <style>
+ 
+        .customContainer{
+            background-color: white;
+            max-width: 600;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow:0 0 10px rgba(0, 0,0,0.2)
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <!--Form
+        FullName
+        Email
+        Phone
+        Password
+        Confirm password-->
+    <div class="container customContainer">
+        <h1>REGISTRATION FORM</h1>
+    <hr>
+    
+        <form id="frmRegistration">
+            <div class="form-group">
+                <!-- fullname -->
+                <label for="fullName">Full Name</label>
+                <input type="text" id="txtFullName" name="txtFullName" class="form-control">
+                <span id="fullNameError" style="color: red;" class="error"></span><br><br>
+            </div>
+            <div class="form-group">
+                <!-- email -->
+                <label for="eMail">E-mail</label>
+                <input type="text" id="txtEmail" name="txtEmail" class="form-control">
+                <span id="emailError" style="color: red;" class="error"></span><br><br>
+            </div>
+            <div class="form-group">
+                <!-- phone -->
+                <label for="phoneNo">Phone Number</label>
+                <input type="number" id="numPhone" name="numPhone" class="form-control">
+                <span id="phoneError" style="color: red;" class="error"></span><br><br>
+            </div>
+            <div class="form-group">
+                <!-- password -->
+                <label for="password">Password</label>
+                <input type="password" id="pwd" name="pwd" class="form-control">
+                <span id="passwordError" style="color: red;" class="error"></span><br><br>
+            </div>
+            <div class="form-group">
+                <!-- confirm password -->
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="pwdConfirmed" name="pwdConfirmed" class="form-control">
+                <span id="passwordConfirmedError" style="color: red;" class="error"></span><br><br>
+            </div>
+            <button type="submit" class="btn btn-primary form-control">Register</button>
+        </form>
+    </div>
+    <script src="/js/registrationFormWithValidation.js"></script>
+</body>
+</html>

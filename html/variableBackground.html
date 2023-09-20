@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variable Background Color</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      transition: background-color 0.5s;
+    }
+
+    .color-option {
+      cursor: pointer;
+      text-decoration: underline;
+      color: black;
+      margin: 10px;
+    }
+
+    .color-option:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Change Background Color</h1>
+  <p class="color-option" onclick="changeBackgroundColor('red')">Change to Red</p>
+  <p class="color-option" onclick="changeBackgroundColor('blue')">Change Blue</p>
+  <p class="color-option" onclick="changeBackgroundColor('green')">Change Green</p>
+  <script src="/js/variableBackground.js">
+        
+  </script>
+</body>
+</html>
